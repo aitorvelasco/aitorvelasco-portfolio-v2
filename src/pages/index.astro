@@ -45,7 +45,7 @@ const categories = [...new Set(websites.map(w => w.category))];
       <div class="relative max-w-6xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
           <!-- Photo & Title -->
-          <div class="lg:col-span-4">
+          <div class="lg:col-span-4 fade-in-left">
             <div class="relative mb-8">
               <div class="w-48 h-48 mx-auto lg:mx-0 rounded-2xl overflow-hidden border-2 border-neutral-800 shadow-2xl shadow-blue-500/10">
                 <img 
@@ -70,12 +70,12 @@ const categories = [...new Set(websites.map(w => w.category))];
 
           <!-- Content -->
           <div class="lg:col-span-8 space-y-8">
-            <p class="text-xl text-neutral-300 leading-relaxed">
+            <p class="text-xl text-neutral-300 leading-relaxed fade-in-right" style="animation-delay: 100ms;">
               Soy un profesional apasionado por el desarrollo y diseño web, con más de 10 años de experiencia en la creación, mantenimiento y optimización de plataformas digitales de alto rendimiento para marcas reconocidas.
             </p>
 
             <!-- Formación -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 fade-in-right" style="animation-delay: 200ms;">
               <div class="flex items-start gap-4 p-4 bg-neutral-900/50 rounded-xl border border-neutral-800">
                 <div class="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center flex-shrink-0">
                   <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -102,7 +102,7 @@ const categories = [...new Set(websites.map(w => w.category))];
             </div>
 
             <!-- Experiencia Timeline -->
-            <div class="space-y-6">
+            <div class="space-y-6 fade-in-right" style="animation-delay: 300ms;">
               <div class="relative pl-8 border-l border-neutral-800">
                 <div class="absolute -left-1.5 top-0 w-3 h-3 rounded-full bg-blue-500"></div>
                 <div class="mb-1">
@@ -263,7 +263,18 @@ const categories = [...new Set(websites.map(w => w.category))];
   </main>
 
   <script>
-    const observer = new IntersectionObserver((entries) => {
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.fade-in-left, .fade-in-right').forEach(el => fadeObserver.observe(el));
+
+    const counterObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const el = entry.target as HTMLElement;
@@ -280,11 +291,28 @@ const categories = [...new Set(websites.map(w => w.category))];
               el.textContent = Math.floor(current) + suffix;
             }
           }, 30);
-          observer.unobserve(el);
+          counterObserver.unobserve(el);
         }
       });
     }, { threshold: 0.5 });
 
-    document.querySelectorAll('[data-target]').forEach(el => observer.observe(el));
+    document.querySelectorAll('[data-target]').forEach(el => counterObserver.observe(el));
   </script>
+
+<style>
+  .fade-in-left, .fade-in-right {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .fade-in-right {
+    transform: translateX(30px);
+  }
+  
+  .fade-in-left.visible, .fade-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+</style>
 </Layout>

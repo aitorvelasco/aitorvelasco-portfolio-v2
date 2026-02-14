@@ -26,11 +26,11 @@ Portfolio personal profesional construido con [Astro](https://astro.build), dise
 │   │   └── websites.ts         # Datos de proyectos
 │   ├── layouts/
 │   │   └── Layout.astro        # Layout principal
-│   ├── pages/
-│   │   ├── index.astro         # Página principal
-│   │   └── proyecto/
-│   │       └── [id].astro      # Página dinámica de proyecto
-│   └── styles/
+│   └── pages/
+│       ├── index.astro         # Página principal
+│       └── proyecto/
+│           └── [id].astro      # Página dinámica de proyecto
+│
 └── astro.config.mjs
 ```
 
