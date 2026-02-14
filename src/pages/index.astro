@@ -140,17 +140,17 @@ const categories = [...new Set(websites.map(w => w.category))];
 
     <!-- Stats -->
     <section class="py-16 px-6 border-y border-neutral-800">
-      <div class="max-w-4xl mx-auto grid grid-cols-3 gap-8 text-center">
+        <div class="max-w-4xl mx-auto grid grid-cols-3 gap-8 text-center">
         <div>
-          <div class="text-4xl font-bold text-white mb-2">{websites.length}</div>
+          <div class="text-4xl font-bold text-white mb-2" data-target={websites.length}>0</div>
           <div class="text-neutral-400">Proyectos</div>
         </div>
         <div>
-          <div class="text-4xl font-bold text-white mb-2">10+</div>
+          <div class="text-4xl font-bold text-white mb-2" data-target="10" data-suffix="+">0</div>
           <div class="text-neutral-400">Años Experiencia</div>
         </div>
         <div>
-          <div class="text-4xl font-bold text-white mb-2">{categories.length}</div>
+          <div class="text-4xl font-bold text-white mb-2" data-target={categories.length}>0</div>
           <div class="text-neutral-400">Categorías</div>
         </div>
       </div>
@@ -261,4 +261,30 @@ const categories = [...new Set(websites.map(w => w.category))];
       </div>
     </footer>
   </main>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target as HTMLElement;
+          const target = parseInt(el.dataset.target || '0');
+          const suffix = el.dataset.suffix || '';
+          let current = 0;
+          const increment = target / 40;
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              el.textContent = target + suffix;
+              clearInterval(timer);
+            } else {
+              el.textContent = Math.floor(current) + suffix;
+            }
+          }, 30);
+          observer.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('[data-target]').forEach(el => observer.observe(el));
+  </script>
 </Layout>
