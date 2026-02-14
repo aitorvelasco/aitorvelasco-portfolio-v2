@@ -31,7 +31,6 @@ Portfolio personal profesional construido con [Astro](https://astro.build), dise
 │   │   └── proyecto/
 │   │       └── [id].astro      # Página dinámica de proyecto
 │   └── styles/
-│       └── global.css
 └── astro.config.mjs
 ```
 
