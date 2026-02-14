@@ -36,24 +36,107 @@ const categories = [...new Set(websites.map(w => w.category))];
       </div>
     </section>
 
+    <!-- About Section -->
+    <section id="sobre-mi" class="py-32 px-6 relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-b from-black via-neutral-950 to-neutral-900"></div>
+      <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-neutral-800 to-transparent"></div>
+      
+      <div class="relative max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+          <!-- Title -->
+          <div class="lg:col-span-4">
+            <p class="text-blue-400 font-medium mb-4 tracking-wider uppercase text-sm">Sobre mí</p>
+            <h2 class="text-4xl md:text-5xl font-bold text-white leading-tight">
+              Pasión por crear<br/>
+              <span class="text-neutral-500">experiencias web</span>
+            </h2>
+            <div class="mt-8 w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
+          </div>
+
+          <!-- Content -->
+          <div class="lg:col-span-8 space-y-8">
+            <p class="text-xl text-neutral-300 leading-relaxed">
+              Soy un profesional apasionado por el desarrollo y diseño web, con más de 10 años de experiencia en la creación, mantenimiento y optimización de plataformas digitales de alto rendimiento para marcas reconocidas.
+            </p>
+
+            <!-- Formación -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="flex items-start gap-4 p-4 bg-neutral-900/50 rounded-xl border border-neutral-800">
+                <div class="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-white font-medium">Ingeniería Informática</h4>
+                  <p class="text-neutral-500 text-sm">Universidad Rey Juan Carlos</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4 p-4 bg-neutral-900/50 rounded-xl border border-neutral-800">
+                <div class="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-white font-medium">Máster en Desarrollo Web</h4>
+                  <p class="text-neutral-500 text-sm">Escuela CICE</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experiencia Timeline -->
+            <div class="space-y-6">
+              <div class="relative pl-8 border-l border-neutral-800">
+                <div class="absolute -left-1.5 top-0 w-3 h-3 rounded-full bg-blue-500"></div>
+                <div class="mb-1">
+                  <span class="text-blue-400 text-sm font-medium">MASORANGE</span>
+                </div>
+                <h4 class="text-white font-semibold text-lg">Senior FrontEnd Developer</h4>
+                <p class="text-neutral-400 text-sm mb-2">IT Departament</p>
+                <p class="text-neutral-500 text-sm">Responsable de las áreas públicas de MASMOVIL, Yoigo, Jazztel, llamaya, Euskaltel, Guuk, R, Racctel+, Telecable y Lebara.</p>
+              </div>
+
+              <div class="relative pl-8 border-l border-neutral-800">
+                <div class="absolute -left-1.5 top-0 w-3 h-3 rounded-full bg-purple-500"></div>
+                <div class="mb-1">
+                  <span class="text-purple-400 text-sm font-medium">Grupo MASMOVIL</span>
+                </div>
+                <h4 class="text-white font-semibold text-lg">Senior FrontEnd Developer</h4>
+                <p class="text-neutral-400 text-sm mb-2">IT Departament</p>
+                <p class="text-neutral-500 text-sm">Liderando proyectos estratégicos y mejorando la experiencia de usuario en plataformas digitales.</p>
+              </div>
+
+              <div class="relative pl-8 border-l border-neutral-800">
+                <div class="absolute -left-1.5 top-0 w-3 h-3 rounded-full bg-neutral-600"></div>
+                <div class="mb-1">
+                  <span class="text-neutral-400 text-sm font-medium">BQ</span>
+                </div>
+                <h4 class="text-white font-semibold text-lg">FrontEnd Developer</h4>
+                <p class="text-neutral-400 text-sm mb-2">E-business Department</p>
+                <p class="text-neutral-500 text-sm">Desarrollo y mantenimiento de tienda online, DIWO, Blog BQ y web principal.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Stats -->
     <section class="py-16 px-6 border-y border-neutral-800">
-      <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div class="max-w-4xl mx-auto grid grid-cols-3 gap-8 text-center">
         <div>
           <div class="text-4xl font-bold text-white mb-2">{websites.length}</div>
           <div class="text-neutral-400">Proyectos</div>
         </div>
         <div>
+          <div class="text-4xl font-bold text-white mb-2">10+</div>
+          <div class="text-neutral-400">Años Experiencia</div>
+        </div>
+        <div>
           <div class="text-4xl font-bold text-white mb-2">{categories.length}</div>
           <div class="text-neutral-400">Categorías</div>
-        </div>
-        <div>
-          <div class="text-4xl font-bold text-white mb-2">8+</div>
-          <div class="text-neutral-400">Tecnologías</div>
-        </div>
-        <div>
-          <div class="text-4xl font-bold text-white mb-2">2026</div>
-          <div class="text-neutral-400">Año Actual</div>
         </div>
       </div>
     </section>
