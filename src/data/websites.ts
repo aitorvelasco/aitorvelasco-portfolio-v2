@@ -1,7 +1,9 @@
 export interface Website {
   id: string;
   title: string;
-  description: string;
+  short_description: string;
+  long_description: string;
+  extra_long_description?: string;
   category: string;
   color: string;
   image: string;
@@ -20,7 +22,11 @@ export const websites: Website[] = [
   {
     id: "portfolio-photo",
     title: "Sara Montoya Fotografía",
-    description: "Portfolio de fotografía. Proyecto final de curso.",
+    short_description: "Portfolio de fotografía. Proyecto final de curso.",
+    long_description: `Este proyecto representa un desafío único en el desarrollo web moderno. 
+    Se diseñó con el objetivo de proporcionar una experiencia de usuario excepcional, combinando estética visual con funcionalidad robusta.`,
+    extra_long_description: `El desarrollo incluyó la implementación de las últimas tecnologías frontend, 
+    optimización de rendimiento y diseño responsive para garantizar una experiencia consistente en todos los dispositivos.`,
     category: "portfolio",
     color: "from-rose-500 to-amber-500",
     image: "/websites/sm-foto.jpg",
@@ -31,7 +37,11 @@ export const websites: Website[] = [
   {
     id: "ecommerce-bq",
     title: "Tienda bq",
-    description: "Tienda online de bq",
+    short_description: "Tienda online de bq",
+    long_description: `Este proyecto representa un desafío único en el desarrollo web moderno. 
+    Se diseñó con el objetivo de proporcionar una experiencia de usuario excepcional, combinando estética visual con funcionalidad robusta.`,
+    extra_long_description: `El desarrollo incluyó la implementación de las últimas tecnologías frontend, 
+    optimización de rendimiento y diseño responsive para garantizar una experiencia consistente en todos los dispositivos.`,
     category: "E-commerce",
     color: "from-emerald-500 to-cyan-500",
     image: "/websites/bq-store.png",
@@ -42,7 +52,11 @@ export const websites: Website[] = [
   {
     id: "wordpress-diwo",
     title: "DIWO",
-    description: "Blog de DIWO para bq",
+    short_description: "Blog de DIWO para bq",
+    long_description: `Este proyecto representa un desafío único en el desarrollo web moderno. 
+    Se diseñó con el objetivo de proporcionar una experiencia de usuario excepcional, combinando estética visual con funcionalidad robusta.`,
+    extra_long_description: `El desarrollo incluyó la implementación de las últimas tecnologías frontend, 
+    optimización de rendimiento y diseño responsive para garantizar una experiencia consistente en todos los dispositivos.`,
     category: "Blog",
     color: "from-slate-500 to-zinc-500",
     image: "/websites/diwo.png",
@@ -53,7 +67,11 @@ export const websites: Website[] = [
   {
     id: "bq-website",
     title: "bq",
-    description: "Web oficial de la empresa de telefonia española bq",
+    short_description: "Web oficial de la empresa de telefonia española bq",
+    long_description: `Este proyecto representa un desafío único en el desarrollo web moderno. 
+    Se diseñó con el objetivo de proporcionar una experiencia de usuario excepcional, combinando estética visual con funcionalidad robusta.`,
+    extra_long_description: `El desarrollo incluyó la implementación de las últimas tecnologías frontend, 
+    optimización de rendimiento y diseño responsive para garantizar una experiencia consistente en todos los dispositivos.`,
     category: "website",
     color: "from-orange-500 to-yellow-500",
     image: "/websites/bqcom.png",
@@ -64,7 +82,11 @@ export const websites: Website[] = [
   {
     id: "llamaya-eshop",
     title: "llamaya eShop",
-    description: "Tienda online de la marca llamaya",
+    short_description: "Tienda online de la marca llamaya",
+    long_description: `Este proyecto representa un desafío único en el desarrollo web moderno. 
+    Se diseñó con el objetivo de proporcionar una experiencia de usuario excepcional, combinando estética visual con funcionalidad robusta.`,
+    extra_long_description: `El desarrollo incluyó la implementación de las últimas tecnologías frontend, 
+    optimización de rendimiento y diseño responsive para garantizar una experiencia consistente en todos los dispositivos.`,
     category: "eshop",
     color: "from-red-500 to-pink-500",
     image: "/websites/llamaya.png",
@@ -76,7 +98,11 @@ export const websites: Website[] = [
   {
     id: "masmovil-eshop",
     title: "MASMOVIL eShop",
-    description: "Tienda online de la marca MASMOVIL",
+    short_description: "Tienda online de la marca MASMOVIL",
+    long_description: `Este proyecto representa un desafío único en el desarrollo web moderno. 
+    Se diseñó con el objetivo de proporcionar una experiencia de usuario excepcional, combinando estética visual con funcionalidad robusta.`,
+    extra_long_description: `El desarrollo incluyó la implementación de las últimas tecnologías frontend, 
+    optimización de rendimiento y diseño responsive para garantizar una experiencia consistente en todos los dispositivos.`,
     category: "eshop",
     color: "from-blue-500 to-indigo-500",
     image: "/websites/masmovil.png",
@@ -88,7 +114,11 @@ export const websites: Website[] = [
   {
     id: "yoigo-eshop",
     title: "Yoigo eShop",
-    description: "Tienda online de la marca YOIGO",
+    short_description: "Tienda online de la marca YOIGO",
+    long_description: `Este proyecto representa un desafío único en el desarrollo web moderno. 
+    Se diseñó con el objetivo de proporcionar una experiencia de usuario excepcional, combinando estética visual con funcionalidad robusta.`,
+    extra_long_description: `El desarrollo incluyó la implementación de las últimas tecnologías frontend, 
+    optimización de rendimiento y diseño responsive para garantizar una experiencia consistente en todos los dispositivos.`,
     category: "eshop",
     color: "from-violet-500 to-purple-500",
     image: "/websites/yoigo.png",

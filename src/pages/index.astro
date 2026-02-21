@@ -166,7 +166,7 @@ const categories = [...new Set(websites.map(w => w.category))];
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {websites.map((website, index) => (
+          {websites.map(({ image, title, color, year, category, short_description, tags, id }, index) => (
             <article 
               class="group relative bg-neutral-900 rounded-2xl overflow-hidden border border-neutral-800 hover:border-neutral-700 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10"
               style={`animation-delay: ${index * 100}ms`}
@@ -174,16 +174,16 @@ const categories = [...new Set(websites.map(w => w.category))];
               <!-- Image -->
               <div class="relative aspect-[16/10] overflow-hidden">
                 <Image 
-                  src={website.image} 
-                  alt={website.title}
+                  src={image} 
+                  alt={title}
                   width={600}
                   height={375}
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div class={`absolute inset-0 bg-gradient-to-t ${website.color} opacity-0 group-hover:opacity-20 transition-opacity duration-300`}></div>
+                <div class={`absolute inset-0 bg-gradient-to-t ${color} opacity-0 group-hover:opacity-20 transition-opacity duration-300`}></div>
                 <div class="absolute top-4 right-4">
                   <span class="px-3 py-1 bg-neutral-900/80 backdrop-blur-sm rounded-full text-xs font-medium text-white">
-                    {website.year}
+                    {year}
                   </span>
                 </div>
               </div>
@@ -192,21 +192,21 @@ const categories = [...new Set(websites.map(w => w.category))];
               <div class="p-6">
                 <div class="flex items-center gap-2 mb-3">
                   <span class="px-2 py-1 bg-neutral-800 rounded text-xs text-neutral-400">
-                    {website.category}
+                    {category}
                   </span>
                 </div>
                 
                 <h3 class="text-xl font-semibold text-white mb-2 group-hover:text-blue-400 transition-colors">
-                  {website.title}
+                  {title}
                 </h3>
                 
                 <p class="text-neutral-400 text-sm mb-4 line-clamp-2">
-                  {website.description}
+                  {short_description}
                 </p>
 
                 <!-- Tags -->
                 <div class="flex flex-wrap gap-2 mb-4">
-                  {website.tags.map(tag => (
+                  {tags.map(tag => (
                     <span class="px-2 py-1 bg-neutral-800/50 rounded text-xs text-neutral-500">
                       {tag}
                     </span>
@@ -215,7 +215,7 @@ const categories = [...new Set(websites.map(w => w.category))];
 
                 <!-- CTA -->
                 <a 
-                  href={`/proyecto/${website.id}`}
+                  href={`/proyecto/${id}`}
                   class="inline-flex items-center gap-2 text-sm font-medium text-white group/btn"
                 >
                   Ver detalles
