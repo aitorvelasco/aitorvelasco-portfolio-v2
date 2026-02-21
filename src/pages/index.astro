@@ -331,7 +331,7 @@ const categories = [...new Set(websites.map(w => w.category))];
   document.documentElement.classList.remove('no-js');
 
   const words = ['Frontend', 'React', 'Design', 'Next', 'Performance', 'Astro', 'Accessibility', 'Typescript', 'Optimization' ];
-  const typingText = document.querySelector('.typing-text');
+  const typingText = document.querySelector('.typing-text') as Element;
   let wordIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
