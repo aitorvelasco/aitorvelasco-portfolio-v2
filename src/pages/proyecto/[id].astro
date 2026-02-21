@@ -148,12 +148,13 @@ const { website } = Astro.props;
               </dl>
             </div>
 
-            <a 
-              href="#"
+            {website.href && <a 
+              href={website.href}
+              target="_blank"
               class="block w-full py-3 bg-blue-600 hover:bg-blue-700 text-white text-center rounded-full font-medium transition-colors"
             >
               Ver sitio en vivo
-            </a>
+            </a>}
           </div>
         </div>
       </div>
