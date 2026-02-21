@@ -48,17 +48,17 @@ const categories = [...new Set(websites.map(w => w.category))];
           <!-- Photo & Title -->
           <div class="lg:col-span-4 fade-in-left">
             <div class="relative mb-8">
-              <div class="w-48 h-48 mx-auto lg:mx-0 rounded-2xl overflow-hidden border-2 border-neutral-800 shadow-2xl shadow-blue-500/10">
+              <div class="w-48 h-48 mx-auto lg:mx-0 rounded-2xl border-2 border-neutral-800 shadow-2xl shadow-blue-500/10 relative">
                 <img 
                   src="/foto.webp" 
                   alt="Aitor Velasco" 
-                  class="w-full h-full object-cover"
+                  class="w-full h-full object-cover rounded-2xl"
                 />
-              </div>
-              <div class="absolute -bottom-4 -right-4 lg:right-auto lg:-left-4 w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center shadow-lg">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                </svg>
+                <div class="absolute -bottom-3 -left-3 w-28 h-8 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center shadow-lg overflow-hidden">
+                  <span class="text-white font-mono text-xs">
+                    <span>&lt;</span><span class="typing-text"></span><span>/&gt;</span>
+                  </span>
+                </div>
               </div>
             </div>
             <p class="text-blue-400 font-medium mb-4 tracking-wider uppercase text-sm">Sobre mí</p>
@@ -329,5 +329,38 @@ const categories = [...new Set(websites.map(w => w.category))];
 
 <script>
   document.documentElement.classList.remove('no-js');
+
+  const words = ['Frontend', 'React', 'Design', 'Next', 'Performance', 'Astro', 'Accessibility', 'Typescript', 'Optimization' ];
+  const typingText = document.querySelector('.typing-text');
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function type() {
+    const currentWord = words[wordIndex];
+    
+    if (isDeleting) {
+      typingText.textContent = currentWord.substring(0, charIndex - 1);
+      charIndex--;
+    } else {
+      typingText.textContent = currentWord.substring(0, charIndex + 1);
+      charIndex++;
+    }
+
+    let typeSpeed = isDeleting ? 30 : 80;
+
+    if (!isDeleting && charIndex === currentWord.length) {
+      typeSpeed = 1500;
+      isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      wordIndex = (wordIndex + 1) % words.length;
+      typeSpeed = 300;
+    }
+
+    setTimeout(type, typeSpeed);
+  }
+
+  document.addEventListener('DOMContentLoaded', type);
 </script>
 </Layout>
