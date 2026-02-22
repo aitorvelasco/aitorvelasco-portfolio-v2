@@ -12,6 +12,7 @@ Portfolio personal profesional construido con [Astro](https://astro.build), dise
 - **Rutas dinámicas** para páginas de proyectos individuales
 - **Animaciones fluidas** y transiciones suaves
 - **SEO optimizado** con meta tags apropiados
+- **Fuentes locales** cargadas con preload para máximo rendimiento
 
 ## Estructura del Proyecto
 
@@ -63,15 +64,15 @@ El portfolio incluye 7 proyectos en diferentes categorías:
 
 | Command           | Action                                        |
 | :---------------- | :-------------------------------------------- |
-| `npm install`     | Instala dependencias                          |
-| `npm run dev`     | Inicia servidor local en `localhost:4321`     |
-| `npm run build`   | Construye para producción en `./dist/`         |
-| `npm run preview` | Previsualiza build localmente                 |
+| `pnpm install`    | Instala dependencias                          |
+| `pnpm dev`        | Inicia servidor local en `localhost:4321`     |
+| `pnpm build`      | Construye para producción en `./dist/`        |
+| `pnpm preview`    | Previsualiza build localmente                 |
 
 ## Deploy
 
 ```bash
-npm run build
+pnpm build
 ```
 
 El directorio `dist/` está listo para desplegar en cualquier hosting estático (Vercel, Netlify, GitHub Pages, etc.).
