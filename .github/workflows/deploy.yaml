@@ -15,32 +15,31 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
-      - name: Checkout
+      # 1️⃣ Clone repo
+      - name: Checkout repository
         uses: actions/checkout@v4
-
-      # 1️⃣ Install pnpm
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
 
       # 2️⃣ Install Node
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: pnpm
+          node-version: 24
 
-      # 3️⃣ Install dependencies
+      # 3️⃣ Active pnpm with corepack
+      - name: Enable pnpm
+        run: |
+          corepack enable
+          corepack prepare pnpm@9.32.4 --activate
+
+      # 4️⃣ Install dependencies
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      # 4️⃣ Build Astro
+      # 5️⃣ Build Astro
       - name: Build Astro
         run: pnpm build
 
-      # 5️⃣ Deploy
+      # 6️⃣ Upload build to GitHub Pages
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -49,12 +48,10 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
