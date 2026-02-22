@@ -1,6 +1,7 @@
 {
   "name": "astro-portfolio",
   "author": "Aitor Velasco",
+  "private": true,
   "type": "module",
   "version": "1.0.0",
   "scripts": {
@@ -10,8 +11,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@tailwindcss/vite": "4.2.0",
     "astro": "5.17.3",
     "tailwindcss": "4.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.2.0"
   }
 }
