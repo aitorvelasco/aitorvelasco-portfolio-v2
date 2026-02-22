@@ -36,16 +36,15 @@ Portfolio personal profesional construido con [Astro](https://astro.build), dise
 
 ## Proyectos Incluidos
 
-El portfolio incluye 8 proyectos en diferentes categorías:
+El portfolio incluye 7 proyectos en diferentes categorías:
 
-- **E-commerce**: Luxe Fashion (Shopify, React)
-- **SaaS**: DataFlow (Next.js, D3.js)
-- **Portfolio**: Studio Noir (Astro, Framer Motion)
-- **Restaurant**: Olea (Webflow)
-- **Mobile App**: PulseFit (React Native)
-- **Blog**: DevPulse (Gatsby)
-- **Fintech**: BitVault (Web3, Solidity)
-- **Travel**: Wanderlust (Vue.js, Mapbox)
+- **Portfolio**: Sara Montoya Fotografía (HTML5, CSS3, JS)
+- **E-commerce**: Tienda bq (Magento, jQuery)
+- **Blog**: DIWO (Wordpress)
+- **Website**: bq (Twig, SEO)
+- **E-shop**: llamaya eShop (React, NextJS, Material UI)
+- **E-shop**: MASMOVIL eShop (React, NextJS, Material UI)
+- **E-shop**: Yoigo eShop (React, NextJS, Material UI)
 
 ## Experiencia Profesional
 
@@ -81,4 +80,4 @@ El directorio `dist/` está listo para desplegar en cualquier hosting estático 
 
 - Email: aitorvelascodev@gmail.com
 - GitHub: [github.com/aitorvelasco](https://github.com/aitorvelasco)
-- LinkedIn: [linkedin.com/in/aitor-velasco-ovejero](https://www.linkedin.com/in/aitor-velasco-ovejero-91a0094b)
+- LinkedIn: [linkedin.com/in/aitorvelascodev](https://www.linkedin.com/in/aitorvelascodev)
