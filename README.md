@@ -25,9 +25,9 @@ Portfolio personal profesional construido con [Astro](https://astro.build), dise
 │   │   └── *.woff2
 │   ├── images/
 │   │   ├── foto.webp
-│   │   └── logo.webp
-│   └── websites/
-│       └── *.png
+│   │   ├── logo.webp
+│   │   └── websites/
+│   │       └── *.png
 ├── src/
 │   ├── data/
 │   │   └── websites.ts
