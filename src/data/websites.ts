@@ -24,11 +24,11 @@ export const websites: Website[] = [
     id: "portfolio-photo",
     title: "Sara Montoya Fotografía",
     short_description: "Portfolio de fotografía. Proyecto final de curso.",
-    long_description: `Portfolio profesional para fotógrafa especializada en fotografía de moda y eventos. 
+    long_description: `Portfolio profesional para fotógrafa especializada en fotografía de familia y eventos. 
     El proyecto se desarrolló como trabajo final de curso, enfocándose en crear una experiencia visual inmersiva 
     que destacara el trabajo artístico de la fotógrafa mediante una navegación intuitiva y galerías optimizadas.`,
     extra_long_description: `Se implementó una galería interactiva con lightbox personalizado, transiciones suaves entre imágenes 
-    y un sistema de filtrado por categorías (retratos, moda, eventos). El diseño minimalista permite que las fotografías 
+    y un sistema de filtrado por categorías (retratos, books, eventos). El diseño minimalista permite que las fotografías 
     sean el protagonista absoluto, mientras que la optimización de imágenes garantiza tiempos de carga rápidos sin 
     comprometer la calidad visual.`,
     category: "portfolio",
@@ -72,7 +72,7 @@ export const websites: Website[] = [
     title: "DIWO",
     short_description: "Blog de DIWO para bq",
     long_description: `Blog corporativo de DIWO (Do It With Others), iniciativa de bq para la comunidad maker y tecnológica. 
-    El proyecto consistió en adaptar un theme de WordPress para crear un blog multilingüe con diseño personalizado 
+    El proyecto consistió en adaptar un theme de WordPress para crear un blog multilenguaje con diseño personalizado 
     y optimización para contenido técnico y tutoriales.`,
     extra_long_description: `Se desarrolló un sistema de custom post types para tutoriales y proyectos, integración con Discourse 
     como sistema de comentarios, newsletter automatizado y optimización SEO específica para contenido técnico. 
@@ -98,7 +98,7 @@ export const websites: Website[] = [
     El proyecto incluyó el desarrollo de múltiples landing pages, formulario de contacto complejo y 
     integración con sistemas de soporte y ticketing.`,
     extra_long_description: `Se implementó un sistema de gestión de contenido modular mediante Twig, integración con CRM para 
-    captura de leads, chat en vivo con sistema de ticketing y optimización SEO técnica avanzada. 
+    captura de leads y optimización SEO técnica avanzada. 
     El diseño dinámico permite actualizar secciones promocionales sin necesidad de desarrollo adicional.`,
     category: "website",
     color: "from-orange-500 to-yellow-500",
@@ -109,7 +109,6 @@ export const websites: Website[] = [
     features: [
       "Sistema de gestión de contenido modular con Twig",
       "Integración con CRM para captura de leads",
-      "Chat en vivo con sistema de ticketing",
       "Optimización SEO técnica avanzada"
     ]
   },
