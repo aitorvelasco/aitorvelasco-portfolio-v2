@@ -24,10 +24,13 @@ export const websites: Website[] = [
     id: "portfolio-photo",
     title: "Sara Montoya Fotografía",
     short_description: "Portfolio de fotografía. Proyecto final de curso.",
-    long_description: `Este proyecto representa un desafío único en el desarrollo web moderno. 
-    Se diseñó con el objetivo de proporcionar una experiencia de usuario excepcional, combinando estética visual con funcionalidad robusta.`,
-    extra_long_description: `El desarrollo incluyó la implementación de las últimas tecnologías frontend, 
-    optimización de rendimiento y diseño responsive para garantizar una experiencia consistente en todos los dispositivos.`,
+    long_description: `Portfolio profesional para fotógrafa especializada en fotografía de moda y eventos. 
+    El proyecto se desarrolló como trabajo final de curso, enfocándose en crear una experiencia visual inmersiva 
+    que destacara el trabajo artístico de la fotógrafa mediante una navegación intuitiva y galerías optimizadas.`,
+    extra_long_description: `Se implementó una galería interactiva con lightbox personalizado, transiciones suaves entre imágenes 
+    y un sistema de filtrado por categorías (retratos, moda, eventos). El diseño minimalista permite que las fotografías 
+    sean el protagonista absoluto, mientras que la optimización de imágenes garantiza tiempos de carga rápidos sin 
+    comprometer la calidad visual.`,
     category: "portfolio",
     color: "from-rose-500 to-amber-500",
     image: "/images/websites/sm-foto.jpg",
@@ -35,20 +38,22 @@ export const websites: Website[] = [
     year: "2015",
     status: WebsiteStatus.completed,
     features: [
-      "Diseño responsive optimizado para todos los dispositivos",
-      "Alto rendimiento y tiempos de carga optimizados",
-      "Accesibilidad WCAG AAA compliant",
-      "SEO optimizado para motores de búsqueda"
+      "Galería interactiva con lightbox y transiciones suaves",
+      "Sistema de filtrado por categorías fotográficas",
+      "Diseño minimalista centrado en el contenido visual",
+      "Optimización de imágenes para rendimiento rápido"
     ]
   },
   {
     id: "ecommerce-bq",
     title: "Tienda bq",
     short_description: "Tienda online de bq",
-    long_description: `Este proyecto representa un desafío único en el desarrollo web moderno. 
-    Se diseñó con el objetivo de proporcionar una experiencia de usuario excepcional, combinando estética visual con funcionalidad robusta.`,
-    extra_long_description: `El desarrollo incluyó la implementación de las últimas tecnologías frontend, 
-    optimización de rendimiento y diseño responsive para garantizar una experiencia consistente en todos los dispositivos.`,
+    long_description: `Plataforma de comercio electrónico para la tienda oficial de bq, fabricante español de smartphones y tablets. 
+    El proyecto incluyó el desarrollo de catálogos de productos, carrito de compras y sistema de pago integrado, 
+    todo ello diseñado para ofrecer una experiencia de compra fluida y segura.`,
+    extra_long_description: `Se implementó un sistema de gestión de inventario en tiempo real, integración con múltiples pasarelas de pago 
+    (PayPal, tarjeta de crédito), módulo de seguimiento de pedidos y área de cliente para gestionar historial de compras. 
+    La arquitectura basada en Magento permitió escalar el catálogo y manejar alto tráfico durante campañas promocionales.`,
     category: "E-commerce",
     color: "from-emerald-500 to-cyan-500",
     image: "/images/websites/bq-store.png",
@@ -56,20 +61,22 @@ export const websites: Website[] = [
     year: "2016",
     status: WebsiteStatus.completed,
     features: [
-      "Diseño responsive optimizado para todos los dispositivos",
-      "Alto rendimiento y tiempos de carga optimizados",
-      "Accesibilidad WCAG AAA compliant",
-      "SEO optimizado para motores de búsqueda"
+      "Gestión de inventario en tiempo real",
+      "Integración con múltiples pasarelas de pago",
+      "Módulo de seguimiento de pedidos",
+      "Área de cliente con historial de compras"
     ]
   },
   {
     id: "wordpress-diwo",
     title: "DIWO",
     short_description: "Blog de DIWO para bq",
-    long_description: `Este proyecto representa un desafío único en el desarrollo web moderno. 
-    Se diseñó con el objetivo de proporcionar una experiencia de usuario excepcional, combinando estética visual con funcionalidad robusta.`,
-    extra_long_description: `El desarrollo incluyó la implementación de las últimas tecnologías frontend, 
-    optimización de rendimiento y diseño responsive para garantizar una experiencia consistente en todos los dispositivos.`,
+    long_description: `Blog corporativo de DIWO (Do It With Others), iniciativa de bq para la comunidad maker y tecnológica. 
+    El proyecto consistió en adaptar un theme de WordPress para crear un blog multilingüe con diseño personalizado 
+    y optimización para contenido técnico y tutoriales.`,
+    extra_long_description: `Se desarrolló un sistema de custom post types para tutoriales y proyectos, integración con Discourse 
+    como sistema de comentarios, newsletter automatizado y optimización SEO específica para contenido técnico. 
+    El diseño responsive garantiza una experiencia óptima tanto en escritorio como en dispositivos móviles.`,
     category: "Blog",
     color: "from-slate-500 to-zinc-500",
     image: "/images/websites/diwo.png",
@@ -77,20 +84,22 @@ export const websites: Website[] = [
     year: "2017",
     status: WebsiteStatus.completed,
     features: [
-      "Diseño responsive optimizado para todos los dispositivos",
-      "Alto rendimiento y tiempos de carga optimizados",
-      "Accesibilidad WCAG AAA compliant",
-      "SEO optimizado para motores de búsqueda"
+      "Sistema de custom post types para tutoriales",
+      "Integración con Discourse para comentarios",
+      "Newsletter automatizado con Mailchimp",
+      "Optimización SEO para contenido técnico"
     ]
   },
   {
     id: "bq-website",
     title: "bq",
     short_description: "Web oficial de la empresa de telefonia española bq",
-    long_description: `Este proyecto representa un desafío único en el desarrollo web moderno. 
-    Se diseñó con el objetivo de proporcionar una experiencia de usuario excepcional, combinando estética visual con funcionalidad robusta.`,
-    extra_long_description: `El desarrollo incluyó la implementación de las últimas tecnologías frontend, 
-    optimización de rendimiento y diseño responsive para garantizar una experiencia consistente en todos los dispositivos.`,
+    long_description: `Sitio web corporativo de bq, empresa española líder en tecnología y dispositivos electrónicos. 
+    El proyecto incluyó el desarrollo de múltiples landing pages, formulario de contacto complejo y 
+    integración con sistemas de soporte y ticketing.`,
+    extra_long_description: `Se implementó un sistema de gestión de contenido modular mediante Twig, integración con CRM para 
+    captura de leads, chat en vivo con sistema de ticketing y optimización SEO técnica avanzada. 
+    El diseño dinámico permite actualizar secciones promocionales sin necesidad de desarrollo adicional.`,
     category: "website",
     color: "from-orange-500 to-yellow-500",
     image: "/images/websites/bqcom.png",
@@ -98,20 +107,22 @@ export const websites: Website[] = [
     year: "2018",
     status: WebsiteStatus.completed,
     features: [
-      "Diseño responsive optimizado para todos los dispositivos",
-      "Alto rendimiento y tiempos de carga optimizados",
-      "Accesibilidad WCAG AAA compliant",
-      "SEO optimizado para motores de búsqueda"
+      "Sistema de gestión de contenido modular con Twig",
+      "Integración con CRM para captura de leads",
+      "Chat en vivo con sistema de ticketing",
+      "Optimización SEO técnica avanzada"
     ]
   },
   {
     id: "llamaya-eshop",
     title: "llamaya eShop",
     short_description: "Tienda online de la marca llamaya",
-    long_description: `Este proyecto representa un desafío único en el desarrollo web moderno. 
-    Se diseñó con el objetivo de proporcionar una experiencia de usuario excepcional, combinando estética visual con funcionalidad robusta.`,
-    extra_long_description: `El desarrollo incluyó la implementación de las últimas tecnologías frontend, 
-    optimización de rendimiento y diseño responsive para garantizar una experiencia consistente en todos los dispositivos.`,
+    long_description: `Desarrollo de tienda online para llamaya, marca de telecomunicaciones del grupo MASMOVIL. 
+    El proyecto incluyó la implementación de un configurador de tarifas, integración con sistemas de provisioning 
+    y desarrollo de flujos de compra optimizados para conversión.`,
+    extra_long_description: `Se creó un configurador interactivo de tarifas que permite a los usuarios personalizar su plan según 
+    necesidades, integración en tiempo real con sistemas de activación de líneas y gestión de portabilidades. 
+    El diseño sigue las guidelines de marca mientras optimiza la experiencia de usuario para maximizar conversiones.`,
     category: "eshop",
     color: "from-red-500 to-pink-500",
     image: "/images/websites/llamaya.png",
@@ -119,10 +130,10 @@ export const websites: Website[] = [
     year: "2019",
     status: WebsiteStatus.ongoing,
     features: [
-      "Diseño responsive optimizado para todos los dispositivos",
-      "Alto rendimiento y tiempos de carga optimizados",
-      "Accesibilidad WCAG AAA compliant",
-      "SEO optimizado para motores de búsqueda"
+      "Configurador interactivo de tarifas",
+      "Integración con sistemas de provisioning",
+      "Gestión de portabilidades en tiempo real",
+      "Flujos de compra optimizados para conversión"
     ],
     href: "https://www.llamaya.com",
   },
@@ -130,10 +141,12 @@ export const websites: Website[] = [
     id: "masmovil-eshop",
     title: "MASMOVIL eShop",
     short_description: "Tienda online de la marca MASMOVIL",
-    long_description: `Este proyecto representa un desafío único en el desarrollo web moderno. 
-    Se diseñó con el objetivo de proporcionar una experiencia de usuario excepcional, combinando estética visual con funcionalidad robusta.`,
-    extra_long_description: `El desarrollo incluyó la implementación de las últimas tecnologías frontend, 
-    optimización de rendimiento y diseño responsive para garantizar una experiencia consistente en todos los dispositivos.`,
+    long_description: `Plataforma de comercio electrónico para MASMOVIL, uno de los principales operadores de telecomunicaciones en España. 
+    El proyecto involucró el desarrollo de un sitio de alto tráfico con focus en la velocidad de carga y experiencia de usuario, 
+    integrando múltiples productos de telecomunicaciones (móvil, fibra, fijo).`,
+    extra_long_description: `Se implementó arquitectura server-side rendering para SEO óptimo, sistema de caché avanzado, 
+    integración con sistemas de billing y activación, y A/B testing para optimización continua de conversiones. 
+    El diseño mobile-first responde a que más del 70% del tráfico proviene de dispositivos móviles.`,
     category: "eshop",
     color: "from-blue-500 to-indigo-500",
     image: "/images/websites/masmovil.png",
@@ -141,10 +154,10 @@ export const websites: Website[] = [
     year: "2020",
     status: WebsiteStatus.ongoing,
     features: [
-      "Diseño responsive optimizado para todos los dispositivos",
-      "Alto rendimiento y tiempos de carga optimizados",
-      "Accesibilidad WCAG AAA compliant",
-      "SEO optimizado para motores de búsqueda"
+      "Arquitectura server-side rendering para SEO",
+      "Sistema de caché avanzado para alto tráfico",
+      "Integración con sistemas de billing",
+      "A/B testing para optimización de conversiones"
     ],
     href: "https://www.masmovil.es",
   },
@@ -152,10 +165,12 @@ export const websites: Website[] = [
     id: "yoigo-eshop",
     title: "Yoigo eShop",
     short_description: "Tienda online de la marca YOIGO",
-    long_description: `Este proyecto representa un desafío único en el desarrollo web moderno. 
-    Se diseñó con el objetivo de proporcionar una experiencia de usuario excepcional, combinando estética visual con funcionalidad robusta.`,
-    extra_long_description: `El desarrollo incluyó la implementación de las últimas tecnologías frontend, 
-    optimización de rendimiento y diseño responsive para garantizar una experiencia consistente en todos los dispositivos.`,
+    long_description: `Desarrollo de tienda online para Yoigo, marca de telecomunicaciones del grupo MASMOVIL. 
+    El proyecto consistió en crear una experiencia de compra moderna y diferenciada, con especial atención 
+    a la simplificación del proceso de contratación de tarifas y dispositivos.`,
+    extra_long_description: `Se implementó un diseño visual distintivo que refleja la personalidad joven de la marca, 
+    con animaciones suaves y micro-interacciones que mejoran el engagement. El proceso de compra se redujo a 
+    mínimos pasos, implementando validación en tiempo real y sugerencias personalizadas basadas en el uso del cliente.`,
     category: "eshop",
     color: "from-violet-500 to-purple-500",
     image: "/images/websites/yoigo.png",
@@ -163,10 +178,10 @@ export const websites: Website[] = [
     year: "2021",
     status: WebsiteStatus.ongoing,
     features: [
-      "Diseño responsive optimizado para todos los dispositivos",
-      "Alto rendimiento y tiempos de carga optimizados",
-      "Accesibilidad WCAG AAA compliant",
-      "SEO optimizado para motores de búsqueda"
+      "Diseño visual distintivo y diferenciado",
+      "Proceso de compra simplificado",
+      "Micro-interacciones para mayor engagement",
+      "Sugerencias personalizadas basadas en uso"
     ],
     href: "https://www.yoigo.com",
   }
