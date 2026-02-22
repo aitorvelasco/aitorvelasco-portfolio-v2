@@ -1,2 +1,0 @@
-# Remove trailing slashes from project pages
-/proyecto/*/ /proyecto/$1 301
