@@ -10,6 +10,7 @@ export interface Website {
   tags: string[];
   year: string;
   status: WebsiteStatus;
+  features: string[];
   href?: string;
 }
 
@@ -32,7 +33,13 @@ export const websites: Website[] = [
     image: "/websites/sm-foto.jpg",
     tags: ["HTML5", "CSS3", "JS"],
     year: "2015",
-    status: WebsiteStatus.completed
+    status: WebsiteStatus.completed,
+    features: [
+      "Diseño responsive optimizado para todos los dispositivos",
+      "Alto rendimiento y tiempos de carga optimizados",
+      "Accesibilidad WCAG AAA compliant",
+      "SEO optimizado para motores de búsqueda"
+    ]
   },
   {
     id: "ecommerce-bq",
@@ -47,7 +54,13 @@ export const websites: Website[] = [
     image: "/websites/bq-store.png",
     tags: ["Magento", "jQuery"],
     year: "2016",
-    status: WebsiteStatus.completed
+    status: WebsiteStatus.completed,
+    features: [
+      "Diseño responsive optimizado para todos los dispositivos",
+      "Alto rendimiento y tiempos de carga optimizados",
+      "Accesibilidad WCAG AAA compliant",
+      "SEO optimizado para motores de búsqueda"
+    ]
   },
   {
     id: "wordpress-diwo",
@@ -62,7 +75,13 @@ export const websites: Website[] = [
     image: "/websites/diwo.png",
     tags: ["Wordpress", "poedit"],
     year: "2017",
-    status: WebsiteStatus.completed
+    status: WebsiteStatus.completed,
+    features: [
+      "Diseño responsive optimizado para todos los dispositivos",
+      "Alto rendimiento y tiempos de carga optimizados",
+      "Accesibilidad WCAG AAA compliant",
+      "SEO optimizado para motores de búsqueda"
+    ]
   },
   {
     id: "bq-website",
@@ -77,7 +96,13 @@ export const websites: Website[] = [
     image: "/websites/bqcom.png",
     tags: ["Twig", "SEO"],
     year: "2018",
-    status: WebsiteStatus.completed
+    status: WebsiteStatus.completed,
+    features: [
+      "Diseño responsive optimizado para todos los dispositivos",
+      "Alto rendimiento y tiempos de carga optimizados",
+      "Accesibilidad WCAG AAA compliant",
+      "SEO optimizado para motores de búsqueda"
+    ]
   },
   {
     id: "llamaya-eshop",
@@ -92,8 +117,14 @@ export const websites: Website[] = [
     image: "/websites/llamaya.png",
     tags: ["React", "NextJS", "Material UI"],
     year: "2019",
+    status: WebsiteStatus.ongoing,
+    features: [
+      "Diseño responsive optimizado para todos los dispositivos",
+      "Alto rendimiento y tiempos de carga optimizados",
+      "Accesibilidad WCAG AAA compliant",
+      "SEO optimizado para motores de búsqueda"
+    ],
     href: "https://www.llamaya.com",
-    status: WebsiteStatus.ongoing
   },
   {
     id: "masmovil-eshop",
@@ -108,8 +139,14 @@ export const websites: Website[] = [
     image: "/websites/masmovil.png",
     tags: ["React", "NextJS", "Material UI"],
     year: "2020",
+    status: WebsiteStatus.ongoing,
+    features: [
+      "Diseño responsive optimizado para todos los dispositivos",
+      "Alto rendimiento y tiempos de carga optimizados",
+      "Accesibilidad WCAG AAA compliant",
+      "SEO optimizado para motores de búsqueda"
+    ],
     href: "https://www.masmovil.es",
-    status: WebsiteStatus.ongoing
   },
   {
     id: "yoigo-eshop",
@@ -124,7 +161,13 @@ export const websites: Website[] = [
     image: "/websites/yoigo.png",
     tags: ["React", "NextJS", "Material UI"],
     year: "2021",
+    status: WebsiteStatus.ongoing,
+    features: [
+      "Diseño responsive optimizado para todos los dispositivos",
+      "Alto rendimiento y tiempos de carga optimizados",
+      "Accesibilidad WCAG AAA compliant",
+      "SEO optimizado para motores de búsqueda"
+    ],
     href: "https://www.yoigo.com",
-    status: WebsiteStatus.ongoing
   }
 ];
