@@ -26,5 +26,6 @@ pnpm-debug.log*
 # vscode settings
 .vscode/
 
-# agents/skills (local installation)
+# agents (local installation)
 .agents/
+AGENTS.md
