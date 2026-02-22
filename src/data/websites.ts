@@ -21,7 +21,7 @@ export enum WebsiteStatus {
 
 export const websites: Website[] = [
   {
-    id: "portfolio-photo",
+    id: "portfolio-photography",
     title: "Sara Montoya Fotografía",
     short_description: "Portfolio de fotografía. Proyecto final de curso.",
     long_description: `Portfolio profesional para fotógrafa especializada en fotografía de familia y eventos. 
@@ -68,7 +68,7 @@ export const websites: Website[] = [
     ]
   },
   {
-    id: "wordpress-diwo",
+    id: "diwo-bq",
     title: "DIWO",
     short_description: "Blog de DIWO para bq",
     long_description: `Blog corporativo de DIWO (Do It With Others), iniciativa de bq para la comunidad maker y tecnológica. 
@@ -91,7 +91,7 @@ export const websites: Website[] = [
     ]
   },
   {
-    id: "bq-website",
+    id: "website-bq",
     title: "bq",
     short_description: "Web oficial de la empresa de telefonia española bq",
     long_description: `Sitio web corporativo de bq, empresa española líder en tecnología y dispositivos electrónicos. 
@@ -113,7 +113,7 @@ export const websites: Website[] = [
     ]
   },
   {
-    id: "llamaya-eshop",
+    id: "eshop-llamaya",
     title: "llamaya eShop",
     short_description: "Tienda online de la marca llamaya",
     long_description: `Desarrollo de tienda online para llamaya, marca de telecomunicaciones del grupo MASMOVIL. 
@@ -137,7 +137,7 @@ export const websites: Website[] = [
     href: "https://www.llamaya.com",
   },
   {
-    id: "masmovil-eshop",
+    id: "eshop-masmovil",
     title: "MASMOVIL eShop",
     short_description: "Tienda online de la marca MASMOVIL",
     long_description: `Plataforma de comercio electrónico para MASMOVIL, uno de los principales operadores de telecomunicaciones en España. 
@@ -161,7 +161,7 @@ export const websites: Website[] = [
     href: "https://www.masmovil.es",
   },
   {
-    id: "yoigo-eshop",
+    id: "eshop-yoigo",
     title: "Yoigo eShop",
     short_description: "Tienda online de la marca YOIGO",
     long_description: `Desarrollo de tienda online para Yoigo, marca de telecomunicaciones del grupo MASMOVIL. 
