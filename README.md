@@ -21,22 +21,22 @@ Portfolio personal profesional construido con [Astro](https://astro.build), dise
 ├── public/
 │   ├── favicon.ico
 │   ├── favicon.svg
-│   ├── fonts/                  # Fuentes locales (Inter)
+│   ├── fonts/
 │   │   └── *.woff2
-│   ├── img/
+│   ├── images/
 │   │   ├── foto.webp
 │   │   └── logo.webp
-│   └── websites/               # Imágenes de proyectos
+│   └── websites/
 │       └── *.png
 ├── src/
 │   ├── data/
-│   │   └── websites.ts         # Datos de proyectos
+│   │   └── websites.ts
 │   ├── layouts/
-│   │   └── Layout.astro       # Layout principal
+│   │   └── Layout.astro
 │   └── pages/
-│       ├── index.astro         # Página principal
+│       ├── index.astro
 │       └── proyecto/
-│           └── [id].astro     # Página dinámica de proyecto
+│           └── [id].astro
 ├── astro.config.mjs
 ├── package.json
 └── tsconfig.json
