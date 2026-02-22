@@ -13,10 +13,11 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="description" content="Portfolio de Aitor Velasco - Front End Developer" />
-    <link rel="preload" href="/src/assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/src/assets/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/src/assets/fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/src/assets/fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/Inter-Light.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin />
     <title>{title} | Aitor Velasco | Front End Developer</title>
   </head>
   <body class="bg-neutral-950 text-white font-['Inter'] antialiased">
@@ -29,7 +30,7 @@ const { title } = Astro.props;
   
   @font-face {
     font-family: 'Inter';
-    src: url('/src/assets/fonts/Inter-Light.woff2') format('woff2');
+    src: url('/fonts/Inter-Light.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -37,7 +38,7 @@ const { title } = Astro.props;
   
   @font-face {
     font-family: 'Inter';
-    src: url('/src/assets/fonts/Inter-Regular.woff2') format('woff2');
+    src: url('/fonts/Inter-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -45,7 +46,7 @@ const { title } = Astro.props;
   
   @font-face {
     font-family: 'Inter';
-    src: url('/src/assets/fonts/Inter-Medium.woff2') format('woff2');
+    src: url('/fonts/Inter-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -53,7 +54,7 @@ const { title } = Astro.props;
   
   @font-face {
     font-family: 'Inter';
-    src: url('/src/assets/fonts/Inter-SemiBold.woff2') format('woff2');
+    src: url('/fonts/Inter-SemiBold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -61,7 +62,7 @@ const { title } = Astro.props;
   
   @font-face {
     font-family: 'Inter';
-    src: url('/src/assets/fonts/Inter-Bold.woff2') format('woff2');
+    src: url('/fonts/Inter-Bold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
