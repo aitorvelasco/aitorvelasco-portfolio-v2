@@ -19,20 +19,27 @@ Portfolio personal profesional construido con [Astro](https://astro.build), dise
 ```
 /
 ├── public/
-│   ├── foto.webp
-│   ├── logo.webp
-│   └── favicon.svg
+│   ├── favicon.ico
+│   ├── favicon.svg
+│   ├── fonts/                  # Fuentes locales (Inter)
+│   │   └── *.woff2
+│   ├── img/
+│   │   ├── foto.webp
+│   │   └── logo.webp
+│   └── websites/               # Imágenes de proyectos
+│       └── *.png
 ├── src/
 │   ├── data/
 │   │   └── websites.ts         # Datos de proyectos
 │   ├── layouts/
-│   │   └── Layout.astro        # Layout principal
+│   │   └── Layout.astro       # Layout principal
 │   └── pages/
 │       ├── index.astro         # Página principal
 │       └── proyecto/
-│           └── [id].astro      # Página dinámica de proyecto
-│
-└── astro.config.mjs
+│           └── [id].astro     # Página dinámica de proyecto
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json
 ```
 
 ## Proyectos Incluidos
